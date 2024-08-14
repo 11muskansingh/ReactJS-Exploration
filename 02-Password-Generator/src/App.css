@@ -1,0 +1,111 @@
+.main-container {
+  position: relative;
+  top: 25px;
+  width: 50%;
+  background-color: rgb(42, 37, 58);
+  display: flex;
+  flex-direction: column;
+  /* Stack the elements vertically */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+.title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 3vw;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.password-input {
+  width: 80%;
+  padding: 2%;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  margin-right: 1%;
+}
+
+.copy-button {
+  padding: 2% 4%;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+.main-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.input-field,
+.numbers-check,
+.char-check {
+  display: flex;
+  align-items: center;
+  /* min-width: 150px; */
+}
+
+.input-field input[type="range"] {
+  height: 15px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.numbers-check input[type="checkbox"],
+.char-check input[type="checkbox"] {
+  cursor: pointer;
+  margin: 4%;
+  zoom: 1.2;
+}
+
+label {
+  font-size: 1rem;
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .main-items {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-field,
+  .numbers-check,
+  .char-check {
+    display: flex;
+    justify-content: space-around;
+  }
+}
